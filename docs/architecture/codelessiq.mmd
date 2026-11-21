@@ -1,0 +1,12 @@
+flowchart TD
+    U[User] --> FE[React 19 Workspace]
+    FE --> BFF[NestJS BFF]
+    BFF --> API[FastAPI Generation Services]
+    API --> LLM[LiteLLM Model Routing]
+    API --> MQ[RabbitMQ Workers]
+    MQ --> STATE[Redis Generation State]
+    MQ --> GEN[Project Generation]
+    GEN --> OUT[Generated Repository]
+    OUT --> AGENT[Cinder Post-generation Agent]
+    BFF --> SSE[Server-Sent Events]
+    SSE --> FE
