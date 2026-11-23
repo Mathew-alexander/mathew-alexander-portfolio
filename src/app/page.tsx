@@ -1,4 +1,5 @@
 import { otherProjects, professionalProjects, projects } from "@/data/projects";
+import Link from "next/link";
 
 function ProjectCard({
   project,
@@ -32,9 +33,12 @@ function ProjectCard({
           <span key={tag}>{tag}</span>
         ))}
       </div>
-      <a className="text-link" href={`/projects/${project.slug}/`}>
+      {/* <a className="text-link" href={`/projects/${project.slug}/`}>
         Read case study <b>↗</b>
-      </a>
+      </a> */}
+      <Link className="text-link" href={`/projects/${project.slug}/`} target="_blank">
+        Read case study <b>↗</b>
+      </Link>
     </article>
   );
 }
