@@ -281,8 +281,8 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/mathew-alexander-92a964310/" target="_blank" rel="noreferrer">
             LinkedIn ↗
           </a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer">
-            GitHub profile — add your username ↗
+          <a href="https://github.com/Mathew-alexander" target="_blank" rel="noreferrer">
+            GitHub profile ↗
           </a>
         </div>
       </section>
